@@ -15,6 +15,7 @@ function Square(props) {
 class Board extends React.Component {
 
     // Squareのthis.props.valueにvalue={i}を送る。このときvalue={i}にあたるものをpropsと呼ぶ。
+    // 逆にGameコンポーネントからはstate及びstateの変更処理をpropsで受け取っている、これを上述の通りSquareコンポーネントにパスをする。
 
     renderSquare(i) {
         return (
